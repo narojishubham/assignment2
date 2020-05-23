@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment2';
+  hidden=false;
+  log = [];
+  
+  
+onTogle(){
+  this.hidden = !this.hidden;
+  this.log.push(this.log.length + 1);
+}
 }
